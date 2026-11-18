@@ -1,0 +1,250 @@
+{
+  "profile": {
+    "name": "Yashwardhan Nigam",
+    "headline": "Full-stack developer building web apps with React, Node.js and Python.",
+    "short_bio": "I build web apps end to end, from the database to the interface. I'm a 2026 B.Tech Computer Science graduate, now training in Python Full Stack with Gen AI at Dhee Coding Lab in Bengaluru, and looking for my first software engineering role.",
+    "about": "I started coding in 2022 with HTML, CSS and JavaScript, at the start of my B.Tech in Computer Science at Shri Vaishnav Vidyapeeth Vishwavidyalaya, specialising in Full-Stack Development and Blockchain in collaboration with IBM. Python came next, then data structures and algorithms, and in 2025 the MERN stack, where I built my first full-stack apps.\n\nIn 2026 I built Luxe-E, a MERN ecommerce platform, in IBM's PBEL internship. At Creators Impex I went from Operations Lead to Project Lead while building the team's internal CRM and setting up AI calling for cold leads. I'm now training in Python Full Stack with Gen AI at Dhee Coding Lab.\n\nI'm looking for any technical role in software engineering. I'm ready to learn, adapt and take on whatever the team needs.",
+    "location": "Bengaluru, India",
+    "email": "work.yashwardhan@gmail.com",
+    "phone": "+91 96304 21406",
+    "github_url": "https://github.com/yashwardhan174",
+    "linkedin_url": "https://www.linkedin.com/in/yashwardhan-nigam/",
+    "resume_url": "/resume.pdf",
+    "open_to_work": true,
+    "availability_note": "Open to technical roles in software engineering."
+  },
+  "timeline": [
+    {
+      "date_label": "2022",
+      "title": "Started B.Tech CS at Shri Vaishnav Vidyapeeth Vishwavidyalaya",
+      "description": "Specialising in Full-Stack Development and Blockchain, in collaboration with IBM. Wrote my first code in HTML, CSS and JavaScript.",
+      "kind": "education"
+    },
+    {
+      "date_label": "2023",
+      "title": "Learned Python",
+      "description": "Started programming in Python.",
+      "kind": "learning"
+    },
+    {
+      "date_label": "2024",
+      "title": "Data structures and algorithms",
+      "description": "Practised data structures and algorithms to sharpen my problem solving.",
+      "kind": "learning"
+    },
+    {
+      "date_label": "2025",
+      "title": "Full-stack web with the MERN stack",
+      "description": "Learned MongoDB, Express, React and Node.js and started building full-stack apps.",
+      "kind": "learning"
+    },
+    {
+      "date_label": "Jan 2026",
+      "title": "IBM PBEL internship",
+      "description": "Built Luxe-E, a MERN ecommerce platform, on my own in IBM's Project-Based Experiential Learning program.",
+      "kind": "work"
+    },
+    {
+      "date_label": "Feb 2026",
+      "title": "AI Application and Automation Intern at Creators Impex",
+      "description": "Built an internal CRM with Emergent AI, set up AI calling for cold leads, and moved from Operations Lead to Project Lead.",
+      "kind": "work"
+    },
+    {
+      "date_label": "Jul 2026",
+      "title": "Python Full Stack with Gen AI at Dhee Coding Lab",
+      "description": "Ongoing training in Bengaluru in Python full-stack development with Gen AI.",
+      "kind": "learning"
+    },
+    {
+      "date_label": "Now",
+      "title": "Looking for my first software engineering role",
+      "description": "Open to any technical role in software engineering. If your team is hiring, I'd love to talk.",
+      "kind": "milestone"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Creators Impex",
+      "company_url": "https://www.creatorsimpex.com/",
+      "role": "AI Application and Automation Intern / Project Lead",
+      "employment_type": "Internship",
+      "location": "Gurugram (hybrid)",
+      "start_date": "2026-02-01",
+      "end_date": "2026-06-30",
+      "summary": "Creators Impex is an import company. I joined as Operations Lead, became Project Lead in May 2026, and built the internal tools the team uses to manage leads, clients and work.",
+      "highlights": [
+        "Built the company's internal Web CRM (Lead Tracker and Team Output Manager) with Emergent AI, with role-based access for Admin, Sales and Ops, client payment overviews and automatic guest room allocation by gender and companionship.",
+        "Connected the CRM to WhatsApp through the WhatsApp Business API so the team can update lead status straight from chat.",
+        "Set up an AI caller with Kraya to make the first round of calls to cold leads, replacing manual calling for that stage.",
+        "Identified 2 bottlenecks in a 5-member team (manual first-round lead calls and manual work tracking) and replaced both with automation.",
+        "Moved from Operations Lead to Project Lead in May 2026, coordinating the team's project work."
+      ],
+      "tech_stack": [
+        "Emergent AI",
+        "Kraya",
+        "WhatsApp Business API",
+        "CRM"
+      ]
+    },
+    {
+      "company": "IBM (PBEL)",
+      "company_url": "",
+      "role": "Full-Stack Web Developer Intern",
+      "employment_type": "Internship",
+      "location": "Remote",
+      "start_date": "2026-01-15",
+      "end_date": "2026-05-15",
+      "summary": "IBM's Project-Based Experiential Learning (PBEL) internship, covering full-stack development from basics to advanced. I built Luxe-E, a MERN-stack ecommerce platform, on my own.",
+      "highlights": [
+        "Built Luxe-E, a MERN-stack ecommerce platform, on my own with MongoDB, Express, React and Node.js, from database to user interface.",
+        "Developed product listing, category filtering, cart and checkout flows in React, connected to an Express and MongoDB backend.",
+        "Implemented user signup and login with Node.js, Express and MongoDB.",
+        "Deployed the React frontend to GitHub Pages and kept the code on GitHub with Git version control."
+      ],
+      "tech_stack": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Git",
+        "GitHub Pages"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Web CRM – Lead Tracker and Team Output Manager",
+      "slug": "lead-tracker-crm",
+      "summary": "An internal CRM I built with Emergent AI so the Creators Impex team can manage leads, clients, payments and work in one place.",
+      "tech_stack": [
+        "Emergent AI",
+        "WhatsApp Business API",
+        "Kraya"
+      ],
+      "thumbnail_url": "",
+      "live_url": "",
+      "github_url": "",
+      "featured": true,
+      "problem": "At Creators Impex, a 5-member team tracked its work by hand and made the first round of calls to cold leads manually. The team needed one place to manage leads, client details and payments, with each person seeing only what their role needed.",
+      "approach": "I gathered requirements from the team, then built the CRM with Emergent AI, an AI app builder. I wrote the prompts and tested each feature with the people who would use it.\n\nThe CRM has role-based access for Admin, Sales and Ops. Each client has a card with departure and arrival cities, travel times and passport number. A payment overview shows each client's total and pending amount, and guests are allocated rooms automatically by gender and companionship. Alongside it, I set up an AI caller with Kraya for the first round of calls to cold leads.",
+      "challenges": "The hardest part was connecting the CRM to WhatsApp so the team could update a lead's status from chat. It needed Meta's approval for the WhatsApp Business API and for the business display name, and sending messages in bulk got the company's number blocked along the way. The integration now works, and the team updates lead status directly from WhatsApp.",
+      "outcome": "The team now manages its people, leads and lead status in one system instead of by hand. The payment overview shows at a glance how much is paid and how much is pending, client cards keep travel and passport details together, and the first round of calls to cold leads runs through the AI caller instead of a person.\n\nThis is an internal company tool, so there is no public demo or source code.",
+      "next_steps": "Improve the payment details and connect the CRM to the company website, so new enquiries reach it automatically.",
+      "screenshot_urls": []
+    },
+    {
+      "title": "Developer portfolio",
+      "slug": "developer-portfolio",
+      "summary": "This site: a fast, static React portfolio where all content lives in one JSON file.",
+      "tech_stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "React Router",
+        "Formspree",
+        "Vercel"
+      ],
+      "thumbnail_url": "",
+      "live_url": "",
+      "github_url": "https://github.com/yashwardhan174/portfolio",
+      "featured": false,
+      "problem": "I wanted a portfolio that recruiters can read in under a minute, that loads instantly on any connection, and that I can update without fighting a CMS or paying for a server.",
+      "approach": "It is a single-page React app built with Vite, styled with Tailwind CSS and routed with React Router, so each project gets its own case-study page at /projects/<slug>. Every piece of content (profile, journey, experience, projects, skills, certifications) lives in one file, src/data/content.json, which the components read through a React context. The contact form posts directly to Formspree, so there is no server to host or maintain. The site deploys to Vercel as static files.",
+      "challenges": "Keeping content separate from layout: I defined one JSON structure that every section reads from, so adding a project or a certificate means editing data, not JSX. The contact form needed spam protection without a CAPTCHA, so it uses a hidden honeypot field that Formspree discards automatically, plus input checks in the browser before anything is sent. I also made the form disappear cleanly when no Formspree ID is configured, so the site never shows a form that cannot send.",
+      "outcome": "Updating the site is now: edit content.json, commit, push, and Vercel redeploys automatically.",
+      "next_steps": "Add a short blog section written in Markdown and an automated Lighthouse check on every push.",
+      "screenshot_urls": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "category": "languages"
+    },
+    {
+      "name": "Python",
+      "category": "languages"
+    },
+    {
+      "name": "SQL",
+      "category": "languages"
+    },
+    {
+      "name": "React",
+      "category": "frontend"
+    },
+    {
+      "name": "HTML",
+      "category": "frontend"
+    },
+    {
+      "name": "CSS",
+      "category": "frontend"
+    },
+    {
+      "name": "Node.js",
+      "category": "backend"
+    },
+    {
+      "name": "Express",
+      "category": "backend"
+    },
+    {
+      "name": "REST APIs",
+      "category": "backend"
+    },
+    {
+      "name": "MySQL",
+      "category": "databases"
+    },
+    {
+      "name": "Git",
+      "category": "tools"
+    },
+    {
+      "name": "GitHub",
+      "category": "tools"
+    },
+    {
+      "name": "Postman",
+      "category": "tools"
+    },
+    {
+      "name": "VS Code",
+      "category": "tools"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Full Stack Web Development Industrial Training",
+      "issuer": "Placify Technologies",
+      "issued_on": "",
+      "credential_url": ""
+    },
+    {
+      "name": "Data Science",
+      "issuer": "IBM (Big Data University)",
+      "issued_on": "",
+      "credential_url": ""
+    },
+    {
+      "name": "Reactive Architecture: Reactive Microservices",
+      "issuer": "IBM (Cognitive Class)",
+      "issued_on": "",
+      "credential_url": ""
+    },
+    {
+      "name": "Introduction to Python",
+      "issuer": "IBM CE",
+      "issued_on": "",
+      "credential_url": ""
+    },
+    {
+      "name": "JPMorganChase Software Engineering Job Simulation",
+      "issuer": "Forage",
+      "issued_on": "",
+      "credential_url": ""
+    }
+  ]
+}

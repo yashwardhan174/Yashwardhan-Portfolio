@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yashwardhan Nigam – Full-stack developer</title>
+    <meta name="description" content="Portfolio of Yashwardhan Nigam, a full-stack developer in Bengaluru working with React, Node.js and Python. Projects, internships and my journey into software engineering." />
+    <meta name="theme-color" content="#0D7A72" />
+
+    <!-- Link previews on LinkedIn/WhatsApp. Replace the URLs after deploying. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yashwardhan Nigam – Full-stack developer" />
+    <meta property="og:description" content="Portfolio of Yashwardhan Nigam, a full-stack developer in Bengaluru working with React, Node.js and Python. Projects, internships and my journey into software engineering." />
+    <meta property="og:url" content="https://your-domain.dev/" />
+    <meta property="og:image" content="https://your-domain.dev/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yashwardhan Nigam – Full-stack developer" />
+    <meta name="twitter:description" content="Portfolio of Yashwardhan Nigam, a full-stack developer in Bengaluru working with React, Node.js and Python. Projects, internships and my journey into software engineering." />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@500&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply the saved theme before first paint to avoid a light/dark flash -->
+    <script>
+      try {
+        const saved = localStorage.getItem('theme')
+        const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
