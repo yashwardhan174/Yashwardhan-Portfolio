@@ -148,7 +148,7 @@
       ],
       "thumbnail_url": "",
       "live_url": "",
-      "github_url": "https://github.com/yashwardhan174/portfolio",
+      "github_url": "https://github.com/yashwardhan174/Yashwardhan-Portfolio",
       "featured": false,
       "problem": "I wanted a portfolio that recruiters can read in under a minute, that loads instantly on any connection, and that I can update without fighting a CMS or paying for a server.",
       "approach": "It is a single-page React app built with Vite, styled with Tailwind CSS and routed with React Router, so each project gets its own case-study page at /projects/<slug>. Every piece of content (profile, journey, experience, projects, skills, certifications) lives in one file, src/data/content.json, which the components read through a React context. The contact form posts directly to Formspree, so there is no server to host or maintain. The site deploys to Vercel as static files.",
