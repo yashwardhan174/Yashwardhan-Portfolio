@@ -4,24 +4,24 @@
 
 /* Color tokens as RGB channels so Tailwind opacity modifiers work (bg-accent/10) */
 :root {
-  --page: 245 248 247;
+  --page: 240 246 251;
   --surface: 255 255 255;
-  --ink: 17 33 38;
-  --muted: 78 98 104;
-  --line: 214 226 225;
-  --accent: 13 122 114; /* teal */
-  --marigold: 196 74 50; /* coral: the secondary highlight colour */
+  --ink: 11 29 45;
+  --muted: 72 94 114;
+  --line: 207 222 235;
+  --accent: 3 105 161; /* deep sky blue */
+  --marigold: 14 116 144; /* cyan: the secondary highlight colour */
   color-scheme: light;
 }
 
 .dark {
-  --page: 10 21 25;
-  --surface: 17 32 37;
-  --ink: 228 238 236;
-  --muted: 145 168 170;
-  --line: 35 55 60;
-  --accent: 72 209 191;
-  --marigold: 255 138 112;
+  --page: 8 22 34; /* deep navy */
+  --surface: 15 37 55;
+  --ink: 236 243 248;
+  --muted: 150 172 190;
+  --line: 32 62 86;
+  --accent: 0 171 240; /* bright cyan */
+  --marigold: 125 224 255;
   color-scheme: dark;
 }
 

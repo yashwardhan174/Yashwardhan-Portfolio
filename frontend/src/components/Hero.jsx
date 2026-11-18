@@ -7,6 +7,8 @@ export default function Hero() {
 
   return (
     <section className="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-8 sm:pt-24">
+      <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16">
+        <div>
       {profile.open_to_work && (
         <p className="hero-item mb-6 inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-sm">
           <span className="h-2 w-2 rounded-full bg-marigold motion-safe:animate-pulse" aria-hidden="true" />
@@ -15,7 +17,7 @@ export default function Hero() {
       )}
 
       <h1
-        className="hero-item max-w-4xl text-5xl font-bold leading-[1.02] tracking-tight sm:text-7xl lg:text-8xl"
+        className="hero-item max-w-4xl text-5xl font-bold leading-[1.02] tracking-tight sm:text-7xl lg:text-7xl"
         style={{ animationDelay: '80ms' }}
       >
         <span className="bg-gradient-to-r from-accent to-marigold bg-clip-text pb-2 text-transparent">{profile.name}</span>
@@ -69,6 +71,28 @@ export default function Hero() {
           </a>
         </li>
       </ul>
+        </div>
+
+        {profile.photo_url && (
+          <div className="hero-item order-first mx-auto lg:order-none" style={{ animationDelay: '150ms' }}>
+            <div className="relative h-44 w-44 sm:h-56 sm:w-56 lg:h-80 lg:w-80">
+              {/* Rotating cyan arc around the photo */}
+              <span
+                className="absolute -inset-4 rounded-full border-2 border-transparent border-r-accent border-t-accent motion-safe:animate-[spin_12s_linear_infinite]"
+                aria-hidden="true"
+              />
+              <span className="absolute -inset-2 rounded-full border border-accent/30" aria-hidden="true" />
+              <img
+                src={profile.photo_url}
+                alt={`Photo of ${profile.name}`}
+                width="320"
+                height="320"
+                className="relative h-full w-full rounded-full object-cover object-[50%_18%] shadow-[0_0_70px_-12px_rgb(var(--accent)/0.65)] ring-4 ring-accent"
+              />
+            </div>
+          </div>
+        )}
+      </div>
     </section>
   )
 }
