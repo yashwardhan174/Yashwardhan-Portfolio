@@ -49,7 +49,7 @@ export default function Navbar() {
               href={profile.resume_url}
               target="_blank"
               rel="noreferrer"
-              className="ml-1 hidden rounded-md bg-accent px-3.5 py-2 font-semibold text-page hover:bg-accent/90 sm:inline-block"
+              className="btn-shine ml-1 hidden rounded-md px-3.5 py-2 font-semibold text-page sm:inline-block"
             >
               Resume
             </a>

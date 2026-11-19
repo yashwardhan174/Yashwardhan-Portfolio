@@ -1,6 +1,47 @@
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react'
+import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { usePortfolio } from '../lib/PortfolioContext'
+
+/**
+ * Renders the name one letter at a time so a glint can travel from the first
+ * letter to the last. Each letter takes its colour from the cyan gradient.
+ */
+function ShiningName({ name }) {
+  const letters = [...name].filter((c) => c !== ' ').length
+  let index = 0
+
+  return (
+    <>
+      <span className="sr-only">{name}</span>
+      <span aria-hidden="true">
+        {name.split(' ').map((word, w) => (
+          <Fragment key={w}>
+            {w > 0 && ' '}
+            <span className="inline-block whitespace-nowrap">
+            {[...word].map((char) => {
+              const i = index++
+              const mix = letters > 1 ? Math.round((i / (letters - 1)) * 100) : 0
+              return (
+                <span
+                  key={i}
+                  className="name-letter"
+                  style={{
+                    color: `color-mix(in srgb, rgb(var(--marigold)) ${mix}%, rgb(var(--accent)))`,
+                    animationDelay: `${1000 + i * 70}ms`,
+                  }}
+                >
+                  {char}
+                </span>
+              )
+            })}
+            </span>
+          </Fragment>
+        ))}
+      </span>
+    </>
+  )
+}
 
 export default function Hero() {
   const { profile } = usePortfolio()
@@ -20,7 +61,7 @@ export default function Hero() {
         className="hero-item max-w-4xl text-5xl font-bold leading-[1.02] tracking-tight sm:text-7xl lg:text-7xl"
         style={{ animationDelay: '80ms' }}
       >
-        <span className="bg-gradient-to-r from-accent to-marigold bg-clip-text pb-2 text-transparent">{profile.name}</span>
+        <ShiningName name={profile.name} />
       </h1>
       <p className="hero-item mt-6 max-w-3xl font-display text-2xl font-medium text-ink sm:text-3xl" style={{ animationDelay: '180ms' }}>
         {profile.headline}
@@ -30,7 +71,7 @@ export default function Hero() {
       </p>
 
       <div className="hero-item mt-9 flex flex-wrap items-center gap-3" style={{ animationDelay: '380ms' }}>
-        <Link to="/#projects" className="rounded-md bg-accent px-5 py-3 font-semibold text-page transition hover:bg-accent/90 motion-safe:hover:-translate-y-0.5">
+        <Link to="/#projects" className="btn-shine rounded-md px-5 py-3 font-semibold text-page">
           View projects
         </Link>
         {profile.resume_url && (
@@ -38,7 +79,7 @@ export default function Hero() {
             href={profile.resume_url}
             target="_blank"
             rel="noreferrer"
-            className="rounded-md border border-line bg-surface px-5 py-3 font-semibold transition hover:border-accent motion-safe:hover:-translate-y-0.5"
+            className="rounded-md border border-line bg-surface px-5 py-3 font-semibold transition duration-300 hover:border-accent hover:text-accent hover:shadow-[0_0_24px_-6px_rgb(var(--accent)/0.7)] motion-safe:hover:-translate-y-0.5"
           >
             Download resume
           </a>

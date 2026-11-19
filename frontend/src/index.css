@@ -93,6 +93,77 @@
   transform: none;
 }
 
+/* Shiny primary buttons: cyan gradient, a sheen that sweeps across every few seconds,
+   and a lift with a glow on hover */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background-image: linear-gradient(135deg, rgb(var(--accent)) 0%, rgb(var(--marigold)) 100%);
+  background-size: 160% 100%;
+  background-position: 0% 50%;
+  box-shadow: 0 4px 18px -8px rgb(var(--accent) / 0.8);
+  transition: transform 0.25s ease, box-shadow 0.3s ease, background-position 0.5s ease;
+}
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -60%;
+  width: 45%;
+  z-index: -1;
+  background: linear-gradient(110deg, transparent 0%, rgb(255 255 255 / 0.6) 50%, transparent 100%);
+  transform: skewX(-20deg);
+  animation: btn-sheen 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+.btn-shine:hover,
+.btn-shine:focus-visible {
+  background-position: 100% 50%;
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 30px -8px rgb(var(--accent) / 0.85),
+    0 0 0 1px rgb(var(--marigold) / 0.7) inset;
+}
+.btn-shine:active {
+  transform: translateY(0);
+}
+.btn-shine:disabled {
+  opacity: 0.6;
+  transform: none;
+}
+@keyframes btn-sheen {
+  0% {
+    left: -60%;
+  }
+  35%,
+  100% {
+    left: 130%;
+  }
+}
+
+/* Name shine: each letter glints in turn, from the first to the last (delay set per letter) */
+.name-letter {
+  display: inline-block;
+  animation: letter-glint 5s ease-in-out infinite;
+}
+@keyframes letter-glint {
+  0%,
+  10%,
+  100% {
+    text-shadow: none;
+    transform: none;
+  }
+  4% {
+    color: #fff;
+    text-shadow:
+      0 0 12px rgb(var(--marigold) / 0.9),
+      0 0 28px rgb(var(--accent) / 0.8);
+    transform: translateY(-4px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -105,6 +176,15 @@
     opacity: 1;
   }
   .hero-item {
+    animation: none;
+  }
+  .btn-shine,
+  .btn-shine:hover {
+    transform: none;
+    transition: none;
+  }
+  .btn-shine::after,
+  .name-letter {
     animation: none;
   }
 }
