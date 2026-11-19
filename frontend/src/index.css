@@ -15,11 +15,11 @@
 }
 
 .dark {
-  --page: 8 22 34; /* deep navy */
-  --surface: 15 37 55;
-  --ink: 236 243 248;
-  --muted: 150 172 190;
-  --line: 32 62 86;
+  --page: 0 0 0; /* black */
+  --surface: 17 17 17;
+  --ink: 240 240 240;
+  --muted: 163 163 163;
+  --line: 40 40 40;
   --accent: 0 171 240; /* bright cyan */
   --marigold: 125 224 255;
   color-scheme: dark;
