@@ -148,6 +148,19 @@
   }
 }
 
+/* Screenshot tour: quick fade when switching screens */
+.tour-fade {
+  animation: tour-fade 0.35s ease;
+}
+@keyframes tour-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Name shine: each letter glints in turn, from the first to the last (delay set per letter) */
 .name-letter {
   display: inline-block;
@@ -191,7 +204,8 @@
     transition: none;
   }
   .btn-shine::after,
-  .name-letter {
+  .name-letter,
+  .tour-fade {
     animation: none;
   }
 }

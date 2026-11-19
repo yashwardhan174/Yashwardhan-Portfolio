@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react'
+import { Award, ExternalLink } from 'lucide-react'
 import { formatRange } from '../lib/format'
 import { usePortfolio } from '../lib/PortfolioContext'
 import Section from './Section'
@@ -37,6 +37,17 @@ export default function Experience() {
                 ))}
               </ul>
               <TagList items={job.tech_stack} className="mt-5" />
+              {job.certificate_url && (
+                <a
+                  href={job.certificate_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 rounded-md border border-line bg-surface px-3.5 py-2 text-sm font-semibold transition hover:border-gold hover:text-gold hover:shadow-[0_0_20px_-6px_rgb(var(--gold)/0.7)]"
+                >
+                  <Award size={16} aria-hidden="true" /> View completion letter
+                  <span className="sr-only">(PDF, opens in a new tab)</span>
+                </a>
+              )}
             </div>
           </li>
         ))}

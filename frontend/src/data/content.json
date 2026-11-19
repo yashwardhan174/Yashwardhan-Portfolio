@@ -86,7 +86,8 @@
         "Kraya",
         "WhatsApp Business API",
         "CRM"
-      ]
+      ],
+      "certificate_url": "/certificates/creators-impex-internship-completion.pdf"
     },
     {
       "company": "IBM (PBEL)",
@@ -123,7 +124,7 @@
         "WhatsApp Business API",
         "Kraya"
       ],
-      "thumbnail_url": "",
+      "thumbnail_url": "/images/crm/01-contacts.webp",
       "live_url": "",
       "github_url": "",
       "featured": true,
@@ -132,7 +133,44 @@
       "challenges": "The hardest part was connecting the CRM to WhatsApp so the team could update a lead's status from chat. It needed Meta's approval for the WhatsApp Business API and for the business display name, and sending messages in bulk got the company's number blocked along the way. The integration now works, and the team updates lead status directly from WhatsApp.",
       "outcome": "The team now manages its people, leads and lead status in one system instead of by hand. The payment overview shows at a glance how much is paid and how much is pending, client cards keep travel and passport details together, and the first round of calls to cold leads runs through the AI caller instead of a person.\n\nThis is an internal company tool, so there is no public demo or source code.",
       "next_steps": "Improve the payment details and connect the CRM to the company website, so new enquiries reach it automatically.",
-      "screenshot_urls": []
+      "screenshot_urls": [
+        {
+          "src": "/images/crm/01-contacts.webp",
+          "title": "Contacts: every lead in one place",
+          "caption": "All leads in one searchable table, with inquiry status, call outcome, call attempts and who last updated each lead. Leads can be imported from a sheet or exported, the list syncs automatically every 15 minutes, and a counter shows unread replies from leads."
+        },
+        {
+          "src": "/images/crm/02-call-logs.webp",
+          "title": "Call Logs: daily calling and WhatsApp activity",
+          "caption": "Every call and WhatsApp attempt for the chosen dates, split into connected, disconnected, no response and call-later, with a per-agent breakdown that includes automated messages sent through Interakt."
+        },
+        {
+          "src": "/images/crm/03-activities.webp",
+          "title": "Activities: team output at a glance",
+          "caption": "Tasks for each team member with open and closed counts and a progress bar, so it is easy to see workload and what is still pending."
+        },
+        {
+          "src": "/images/crm/04-analytics.webp",
+          "title": "Analytics: filter the whole pipeline",
+          "caption": "Totals for contacts, updates, call attempts and new leads, filterable by created and updated dates, team member and campaign, plus a breakdown of any field's values."
+        },
+        {
+          "src": "/images/crm/05-bookings.webp",
+          "title": "Bookings: from lead to trip",
+          "caption": "Each booking tracks its passengers, visa, travel dates, package, route, flight and room, along with the amount billed and received. Bookings can be filtered by visa or month and exported, including an export grouped by visa."
+        },
+        {
+          "src": "/images/crm/06-room-allocation.webp",
+          "title": "Room Allocation: automatic pairing",
+          "caption": "Passengers are allocated to rooms automatically by gender and companionship, keeping people from the same booking together. Summary cards show paired passengers, pending pairs and anyone who needs attention."
+        },
+        {
+          "src": "/images/crm/07-payment-records.webp",
+          "title": "Payment Records: who has paid and what is pending",
+          "caption": "Total, paid and remaining amount for every client, with filters for balance due, fully paid and payment month, and a CSV export."
+        }
+      ],
+      "screenshot_note": "Client names, phone numbers and company revenue figures are blurred to protect privacy."
     },
     {
       "title": "Developer portfolio",

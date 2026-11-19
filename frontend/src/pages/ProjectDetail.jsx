@@ -2,6 +2,7 @@ import { ArrowLeft, Github, Globe } from 'lucide-react'
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ProjectCover from '../components/ProjectCover'
+import ScreenshotTour from '../components/ScreenshotTour'
 import { TagList } from '../components/Tag'
 import { usePortfolio } from '../lib/PortfolioContext'
 import NotFound from './NotFound'
@@ -50,7 +51,13 @@ export default function ProjectDetail() {
         )}
       </div>
 
-      {project.thumbnail_url && <ProjectCover project={project} className="mt-10 aspect-[16/9]" />}
+      {project.screenshot_urls?.length > 0 ? (
+        <div className="mt-12">
+          <ScreenshotTour shots={project.screenshot_urls} projectTitle={project.title} note={project.screenshot_note} />
+        </div>
+      ) : (
+        project.thumbnail_url && <ProjectCover project={project} className="mt-10 aspect-[16/9]" />
+      )}
 
       <div className="mt-12 space-y-10">
         {SECTIONS.filter(([key]) => project[key]).map(([key, label]) => (
@@ -65,17 +72,6 @@ export default function ProjectDetail() {
         ))}
       </div>
 
-      {project.screenshot_urls?.length > 0 && (
-        <section className="mt-14">
-          <h2 className="text-xl font-bold">Screenshots</h2>
-          <div className="mt-5 grid gap-5 sm:grid-cols-2">
-            {project.screenshot_urls.map((src, i) => (
-              <img key={src} src={src} alt={`${project.title} screenshot ${i + 1}`} loading="lazy"
-                className="w-full rounded-lg border border-line" />
-            ))}
-          </div>
-        </section>
-      )}
     </article>
   )
 }
