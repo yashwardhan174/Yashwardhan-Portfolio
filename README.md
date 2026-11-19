@@ -4,7 +4,7 @@ My developer portfolio: a static **React** site built with **Vite**, **Tailwind 
 
 <!-- Add a screenshot of the live site here once deployed: ![Screenshot](docs/screenshot.png) -->
 
-**Live site:** https://your-domain.dev
+**Live site:** https://yashwardhan-portfolio-two.vercel.app
 
 ## Features
 
@@ -91,7 +91,7 @@ If `VITE_FORMSPREE_ID` is empty, the form is hidden and visitors see only your d
    - **Framework preset:** Vite
    - **Environment variable:** `VITE_FORMSPREE_ID` = your form ID
 4. Click **Deploy**. Every later `git push` redeploys automatically.
-5. Update the `og:url` and `og:image` tags in `frontend/index.html` with your live domain, and the **Live site** link above.
+5. If the address changes (e.g. a custom domain), update the `og:url` and canonical tags in `frontend/index.html` and the **Live site** link above.
 
 `vercel.json` (and `public/_redirects` for Netlify) makes `/projects/...` links work when the page is refreshed.
 

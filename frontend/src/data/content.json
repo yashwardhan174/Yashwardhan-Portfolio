@@ -147,7 +147,7 @@
         "Vercel"
       ],
       "thumbnail_url": "",
-      "live_url": "",
+      "live_url": "https://yashwardhan-portfolio-two.vercel.app",
       "github_url": "https://github.com/yashwardhan174/Yashwardhan-Portfolio",
       "featured": false,
       "problem": "I wanted a portfolio that recruiters can read in under a minute, that loads instantly on any connection, and that I can update without fighting a CMS or paying for a server.",
