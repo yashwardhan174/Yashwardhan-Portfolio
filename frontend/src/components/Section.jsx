@@ -13,6 +13,7 @@ export default function Section({ id, title, intro, children, className = '' }) 
       <h2 id={`${id}-title`} className="text-3xl font-bold sm:text-4xl">
         {title}
       </h2>
+      <span className="mt-3 block h-1 w-16 rounded-full bg-gradient-to-r from-accent to-gold" aria-hidden="true" />
       {intro && <p className="mt-3 max-w-prose text-muted">{intro}</p>}
       <div className="mt-10">{children}</div>
     </section>

@@ -14,6 +14,7 @@ export default {
         line: v('line'),
         accent: v('accent'),
         marigold: v('marigold'),
+        gold: v('gold'),
       },
       fontFamily: {
         display: ['"Bricolage Grotesque"', 'ui-sans-serif', 'system-ui', 'sans-serif'],

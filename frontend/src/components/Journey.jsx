@@ -30,7 +30,7 @@ function Node({ kind }) {
   const styles = {
     education: 'border-2 border-ink bg-page',
     learning: 'bg-accent',
-    milestone: 'h-4 w-4 left-[4px] top-[5px] bg-marigold ring-[6px] ring-marigold/25',
+    milestone: 'h-4 w-4 left-[4px] top-[5px] bg-gold ring-[6px] ring-gold/25',
   }
   return (
     <span
@@ -84,7 +84,7 @@ export default function Journey() {
               <p className="flex flex-wrap items-baseline gap-x-3 text-sm text-muted">
                 <code className="font-mono text-accent">{shortHash(step.title)}</code>
                 <span>{step.date_label}</span>
-                <span className={step.kind === 'milestone' ? 'font-semibold text-marigold' : ''}>
+                <span className={step.kind === 'milestone' ? 'font-semibold text-gold' : ''}>
                   {KIND_LABEL[step.kind] || step.kind}
                 </span>
               </p>

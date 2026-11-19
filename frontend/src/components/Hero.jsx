@@ -52,7 +52,7 @@ export default function Hero() {
         <div>
       {profile.open_to_work && (
         <p className="hero-item mb-6 inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-sm">
-          <span className="h-2 w-2 rounded-full bg-marigold motion-safe:animate-pulse" aria-hidden="true" />
+          <span className="h-2 w-2 rounded-full bg-gold motion-safe:animate-pulse" aria-hidden="true" />
           {profile.availability_note || 'Open to work'}
         </p>
       )}
@@ -120,6 +120,11 @@ export default function Hero() {
               {/* Rotating cyan arc around the photo */}
               <span
                 className="absolute -inset-4 rounded-full border-2 border-transparent border-r-accent border-t-accent motion-safe:animate-[spin_12s_linear_infinite]"
+                aria-hidden="true"
+              />
+              {/* Gold arc spinning the other way */}
+              <span
+                className="absolute -inset-7 rounded-full border-2 border-transparent border-b-gold/80 border-l-gold/80 motion-safe:animate-[spin_18s_linear_infinite_reverse]"
                 aria-hidden="true"
               />
               <span className="absolute -inset-2 rounded-full border border-accent/30" aria-hidden="true" />

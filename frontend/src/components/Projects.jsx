@@ -33,7 +33,7 @@ function FeaturedProject({ project }) {
         <ProjectCover project={project} className="aspect-[16/10]" />
       </Link>
       <div>
-        <p className="text-sm font-semibold text-marigold">Featured</p>
+        <p className="text-sm font-semibold text-gold">Featured</p>
         <h3 className="mt-1 text-3xl font-bold">
           <Link to={`/projects/${project.slug}`} className="hover:text-accent">
             {project.title}
