@@ -3,7 +3,7 @@
     "name": "Yashwardhan Nigam",
     "headline": "Full-stack developer building web apps with React, Node.js and Python.",
     "short_bio": "I build web apps end to end, from the database to the interface. I'm a 2026 B.Tech Computer Science graduate, now training in Python Full Stack with Gen AI at Dhee Coding Lab in Bengaluru, and looking for my first software engineering role.",
-    "about": "I started coding in 2022 with HTML, CSS and JavaScript, at the start of my B.Tech in Computer Science at Shri Vaishnav Vidyapeeth Vishwavidyalaya, specialising in Full-Stack Development and Blockchain in collaboration with IBM. Python came next, then data structures and algorithms, and in 2025 the MERN stack, where I built my first full-stack apps.\n\nIn 2026 I built Luxe-E, a MERN ecommerce platform, in IBM's PBEL internship. At Creators Impex I went from Operations Lead to Project Lead while building the team's internal CRM and setting up AI calling for cold leads. I'm now training in Python Full Stack with Gen AI at Dhee Coding Lab.\n\nI'm looking for any technical role in software engineering. I'm ready to learn, adapt and take on whatever the team needs.",
+    "about": "I started coding in 2022 with HTML, CSS and JavaScript, at the start of my B.Tech in Computer Science at Shri Vaishnav Vidyapeeth Vishwavidyalaya, specialising in Full-Stack Development and Blockchain in collaboration with IBM. Python came next, then data structures and algorithms, and in 2025 front-end web development in HTML, CSS and JavaScript.\n\nIn 2026 I built Luxe-E, a responsive online store, in IBM's PBEL internship. At Creators Impex I went from Operations Lead to Project Lead while building the team's internal CRM and setting up AI calling for cold leads. I'm now training in Python Full Stack with Gen AI at Dhee Coding Lab.\n\nI'm looking for any technical role in software engineering. I'm ready to learn, adapt and take on whatever the team needs.",
     "location": "Bengaluru, India",
     "email": "work.yashwardhan@gmail.com",
     "phone": "+91 96304 21406",
@@ -35,14 +35,14 @@
     },
     {
       "date_label": "2025",
-      "title": "Full-stack web with the MERN stack",
-      "description": "Learned MongoDB, Express, React and Node.js and started building full-stack apps.",
+      "title": "Learning front-end web development",
+      "description": "Learned HTML, CSS and JavaScript in depth, and how to build interactive pages with state and storage.",
       "kind": "learning"
     },
     {
       "date_label": "Jan 2026",
       "title": "IBM PBEL internship",
-      "description": "Built Luxe-E, a MERN ecommerce platform, on my own in IBM's Project-Based Experiential Learning program.",
+      "description": "Built Luxe-E, a responsive online store in HTML, CSS and JavaScript, on my own in IBM's Project-Based Experiential Learning program.",
       "kind": "work"
     },
     {
@@ -98,20 +98,20 @@
       "location": "Remote",
       "start_date": "2026-01-28",
       "end_date": "2026-05-06",
-      "summary": "IBM's Project-Based Experiential Learning (PBEL) internship, covering full-stack development from basics to advanced. I built Luxe-E, a MERN-stack ecommerce platform, on my own.",
+      "summary": "IBM's Project-Based Experiential Learning (PBEL) program, covering web development from the basics. I built Luxe-E, a responsive online store, on my own.",
       "highlights": [
-        "Built Luxe-E, a MERN-stack ecommerce platform, on my own with MongoDB, Express, React and Node.js, from database to user interface.",
-        "Developed product listing, category filtering, cart and checkout flows in React, connected to an Express and MongoDB backend.",
-        "Implemented user signup and login with Node.js, Express and MongoDB.",
-        "Deployed the React frontend to GitHub Pages and kept the code on GitHub with Git version control."
+        "Built Luxe-E, a responsive online store in HTML, CSS and JavaScript, with product search, category filters and a quick-view window.",
+        "Built a cart that updates the navigation count, item list, quantities and order total, and keeps its contents after a refresh using localStorage.",
+        "Added a mobile menu, toast messages, scroll animations and a newsletter sign-up form.",
+        "Deployed the store to GitHub Pages and kept the code on GitHub with Git version control."
       ],
       "tech_stack": [
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Git",
-        "GitHub Pages"
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "localStorage",
+        "GitHub Pages",
+        "Git"
       ],
       "certificate_url": "/certificates/ibm-pbel-luxe-e-certificate.pdf"
     }
@@ -173,6 +173,28 @@
         }
       ],
       "screenshot_note": "Client names, phone numbers and company revenue figures are blurred to protect privacy."
+    },
+    {
+      "title": "Luxe-E: ecommerce storefront",
+      "slug": "luxe-e",
+      "summary": "A responsive online store I built on my own for IBM's PBEL program: shoppers can search and filter products, view details, and build a cart that survives a page refresh.",
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "localStorage",
+        "GitHub Pages"
+      ],
+      "thumbnail_url": "",
+      "live_url": "https://yashwardhan174.github.io/Yashwardhan-Nigam---PBEL-project/",
+      "github_url": "",
+      "featured": false,
+      "problem": "For IBM's 14-week Project-Based Experiential Learning program I needed to build a complete online store front end. A shopper should be able to find a product quickly, see its details, and build a cart without losing it.",
+      "approach": "Luxe-E is a single page written in HTML, CSS and plain JavaScript, with no framework. The 12 products live in a JavaScript array, and the page renders the category cards, product grid and cart from that data.\n\nShoppers can filter by category (Audio, Accessories, Bags, Footwear) or search by name from the navigation bar, open a quick-view window to choose a quantity, and manage everything in a slide-in cart panel. The cart is saved in the browser's localStorage, so it is still there after a refresh.",
+      "challenges": "Keeping every part of the page in sync with the cart. The cart count in the navigation bar, the item list, the quantities and the order summary all update from one cart array after every change, and the summary works out shipping (free above $500). I also made the quick-view window close with the Escape key or a click outside it, and added scroll animations with IntersectionObserver.",
+      "outcome": "The store is live on GitHub Pages and works on desktop and mobile, with a mobile menu, toast messages when items are added to the cart, and a newsletter sign-up form.",
+      "next_steps": "Connect it to a Node.js and Express backend with a database, so products, accounts and orders are stored on a server, and add a real checkout.",
+      "screenshot_urls": []
     },
     {
       "title": "Developer portfolio",
