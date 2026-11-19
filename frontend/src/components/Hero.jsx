@@ -27,7 +27,7 @@ function ShiningName({ name }) {
                   key={i}
                   className="name-letter"
                   style={{
-                    color: `color-mix(in srgb, rgb(var(--marigold)) ${mix}%, rgb(var(--accent)))`,
+                    '--letter-color': `color-mix(in srgb, rgb(var(--marigold)) ${mix}%, rgb(var(--accent)))`,
                     animationDelay: `${1000 + i * 70}ms`,
                   }}
                 >

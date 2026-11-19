@@ -4,14 +4,16 @@
 
 /* Color tokens as RGB channels so Tailwind opacity modifiers work (bg-accent/10) */
 :root {
-  --page: 240 246 251;
-  --surface: 255 255 255;
-  --ink: 11 29 45;
-  --muted: 72 94 114;
-  --line: 207 222 235;
-  --accent: 3 105 161; /* deep sky blue */
-  --marigold: 14 116 144; /* cyan: the secondary highlight colour */
-  --gold: 180 83 9; /* amber-gold: the third colour, for small highlights */
+  /* Light mode: white with indigo and fuchsia */
+  --page: 255 255 255;
+  --surface: 248 247 255; /* faint lavender tint so cards stand off the white */
+  --ink: 17 16 46;
+  --muted: 82 80 110;
+  --line: 228 225 245;
+  --accent: 79 70 229; /* indigo */
+  --marigold: 192 38 211; /* fuchsia: gradient partner */
+  --gold: 192 38 211; /* fuchsia also takes the highlight role in light mode */
+  --glint: 30 27 75; /* colour a letter flashes to as the name shine passes */
   color-scheme: light;
 }
 
@@ -24,6 +26,7 @@
   --accent: 0 171 240; /* bright cyan */
   --marigold: 125 224 255;
   --gold: 255 181 71;
+  --glint: 255 255 255;
   color-scheme: dark;
 }
 
@@ -148,17 +151,19 @@
 /* Name shine: each letter glints in turn, from the first to the last (delay set per letter) */
 .name-letter {
   display: inline-block;
+  color: var(--letter-color);
   animation: letter-glint 5s ease-in-out infinite;
 }
 @keyframes letter-glint {
   0%,
   10%,
   100% {
+    color: var(--letter-color);
     text-shadow: none;
     transform: none;
   }
   4% {
-    color: #fff;
+    color: rgb(var(--glint));
     text-shadow:
       0 0 12px rgb(var(--gold) / 0.95),
       0 0 28px rgb(var(--accent) / 0.8);
