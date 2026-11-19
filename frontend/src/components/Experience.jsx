@@ -44,7 +44,7 @@ export default function Experience() {
                   rel="noreferrer"
                   className="mt-5 inline-flex items-center gap-2 rounded-md border border-line bg-surface px-3.5 py-2 text-sm font-semibold transition hover:border-gold hover:text-gold hover:shadow-[0_0_20px_-6px_rgb(var(--gold)/0.7)]"
                 >
-                  <Award size={16} aria-hidden="true" /> View completion letter
+                  <Award size={16} aria-hidden="true" /> {job.certificate_label || 'View certificate'}
                   <span className="sr-only">(PDF, opens in a new tab)</span>
                 </a>
               )}

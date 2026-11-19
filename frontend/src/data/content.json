@@ -87,7 +87,8 @@
         "WhatsApp Business API",
         "CRM"
       ],
-      "certificate_url": "/certificates/creators-impex-internship-completion.pdf"
+      "certificate_url": "/certificates/creators-impex-internship-completion.pdf",
+      "certificate_label": "View completion letter"
     },
     {
       "company": "IBM (PBEL)",
@@ -95,8 +96,8 @@
       "role": "Full-Stack Web Developer Intern",
       "employment_type": "Internship",
       "location": "Remote",
-      "start_date": "2026-01-15",
-      "end_date": "2026-05-15",
+      "start_date": "2026-01-28",
+      "end_date": "2026-05-06",
       "summary": "IBM's Project-Based Experiential Learning (PBEL) internship, covering full-stack development from basics to advanced. I built Luxe-E, a MERN-stack ecommerce platform, on my own.",
       "highlights": [
         "Built Luxe-E, a MERN-stack ecommerce platform, on my own with MongoDB, Express, React and Node.js, from database to user interface.",
@@ -111,7 +112,8 @@
         "MongoDB",
         "Git",
         "GitHub Pages"
-      ]
+      ],
+      "certificate_url": "/certificates/ibm-pbel-luxe-e-certificate.pdf"
     }
   ],
   "projects": [
